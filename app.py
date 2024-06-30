@@ -4,14 +4,19 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
-    return 'Hello World!'
-
+def home():
+    return render_template("home.html")
 
 @app.route('/personal')
-def share_personal_info():
-    ...
+def personal_info():
+    return render_template(...)
+
+@app.route('/essays')
+def essays():
+    return render_template(...)
+
+@app.route('/books')
+def books():
+    return render_template(...)
 
 
-if __name__ == '__main__':
-    app.run()
