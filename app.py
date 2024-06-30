@@ -9,7 +9,7 @@ def home():
 
 @app.route('/personal')
 def personal_info():
-    return render_template(...)
+    return render_template("personal.html")
 
 @app.route('/essays')
 def essays():
