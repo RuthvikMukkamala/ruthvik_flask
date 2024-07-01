@@ -11,12 +11,15 @@ def home():
 def personal_info():
     return render_template("personal.html")
 
-@app.route('/essays')
-def essays():
-    return render_template(...)
+@app.route('/research')
+def research_info():
+    return render_template("research.html")
 
-@app.route('/books')
-def books():
-    return render_template(...)
+@app.route('/projects')
+def project_info():
+    return render_template("projects.html")
+
+
+
 
 
