@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %} Ruthvik Mukkamala {% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="d-flex align-items-start">
+    <div class="mr-4">
+{#      <img#}
+{#        src="{{ url_for('static', filename='images/ruthvik_profile_pic.jpeg') }}"#}
+{#        class="img-fluid rounded border-dark"#}
+{#        alt="Ruthvik Mukkamala"#}
+{#        width="200"#}
+{#        height="200"/>#}
+    </div>
+    <div class="p-4 border border-dark flex-fill">
+      <p class="text-dark">
+        Hi, my name is Ruthvik Mukkamala.
+        <br><br>
+        I like quantitative research for financial markets, machine learning, and computer vision. I am current student
+          at New York University studying Applied Mathematics and Computer Science.
+        <br><br>
+        I manage my own fund, Roebling Research, where I have consistently outperformed hedge fund competitors.
+          I started the fund on January 3rd, 2023. My YTD (as of June 2024) performance is 12%.
+        <br><br>
+        My fund is focused on fundamental equity trading. I am a disciple of Warren Buffett and Bill Ackman -
+          I believe in investing in great companies at fair prices and my returns are reflective of value investing strategies.
+          I also have added systematic trading strategies and fixed-income derivatives as of May 2024. I have done option-pricing research using Physics-Informed Neural Networks
+          and power trading research under NYU x MIT Energy. I will be adding commodities trading to my strategies starting 2025.
+
+
+          I plan on publishing my research reports to share my approach. If anyone reads anything they disagree with I would love to hear
+          from you!
+
+          I have also open-sourced my trained Physics Informed Neural Networks on equity options to improve research for options pricing.
+        <br><br>
+        I have also previously worked as a developer for the Macro Quant Development Team at Balyasny Asset Management in 2023. I also worked on HIFI, a music-tech startup acquired by Block in 2022 as a software engineering intern. I loved the focus of a lean team passionate about building financial services for a targeted audience.
+        <br><br>
+        My page serves my opinions and mine alone. I will share research papers, essays, and books I have read or written.
+      </p>
+    </div>
+  </div>
+
+  <div class="d-flex mb-3 mt-4 justify-content-center">
+    <a
+      class="btn btn-light mx-1 text-dark mt-2 border border-secondary"
+      href="mailto:{{ email }}"
+      target="_blank"
+      rel="noopener noreferrer">
+      <span class="fa fa-envelope"></span> Email
+    </a>
+    <a
+      class="btn btn-light mx-1 text-dark mt-2 border border-secondary"
+      href="{{ github }}"
+      target="_blank"
+      rel="noopener noreferrer">
+      <span class="fa fa-github"></span> GitHub
+    </a>
+    <a
+      class="btn btn-light mx-1 text-dark mt-2 border border-secondary"
+      href="{{ linkedin }}"
+      target="_blank"
+      rel="noopener noreferrer">
+      <span class="fa fa-linkedin"></span> LinkedIn
+    </a>
+    <a
+      class="btn btn-light mx-1 text-dark mt-2 border border-secondary"
+      href="{{ twitter }}"
+      target="_blank"
+      rel="noopener noreferrer">
+      <span class="fa fa-twitter"></span> Twitter
+    </a>
+  </div>
+</div>
+{% endblock %}
