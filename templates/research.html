@@ -1,44 +1,76 @@
 {% extends "base.html" %}
 
-{% block title %} Research {% endblock %}
+{% block title %}Research{% endblock %}
 
 {% block content %}
-
-
-<div class="container">
-  <div class="d-flex align-items-start ">
-    <div class="mr-4">
-    </div>
-    <div class="p-4 border border-dark flex-fill">
-      <p class="text-dark">
-        Here I will share all the resources I have found helpful with academic research in topics I
-          have found interesting.
-
-      </p>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <div class="card p-4 border border-dark shadow-sm">
+        <h2 class="text-center text-dark mb-4">Research Resources</h2>
+        <p class="text-muted">
+          Here I will share all the resources I have found helpful in academic research across topics that have sparked my interest.
+        </p>
 
         <hr>
 
         <div class="container">
-        <span class="border border-dark p-2 rounded">&#27030;</span>
-            Algorithms
-            <br><br>
+          <h4 class="text-dark mb-3">Topics</h4>
+
+          <!-- Algorithms Section -->
+          <div class="mb-4">
+            <span class="border border-dark p-2 rounded">&#27030;</span>
+            <strong class="ml-2 toggle-header" data-toggle="algo-links">Algorithms</strong>
+            <ul id="algo-links" class="mt-2 list-unstyled" style="display: none;">
+              <li>&bull; <a href="https://example.com/article1" target="_blank" class="text-dark">Research Paper on Algorithm Optimization</a></li>
+              <li>&bull; <a href="https://example.com/article2" target="_blank" class="text-dark">Exploring Graph Algorithms</a></li>
+            </ul>
+          </div>
+
+          <!-- AI/ML Section -->
+          <div class="mb-4">
             <span class="border border-dark p-2 rounded">&#32205;</span>
-            AI/ML
-            <br><br>
-        <span class="border border-dark p-2 rounded">&#16883;</span>
-            Financial Mathematics/Quantitative Research
-            <br><br>
-        <span class="border border-dark p-2 rounded">&#17630;</span>
-            Finance
-            <br><br>
+            <strong class="ml-2 toggle-header" data-toggle="ai-links">AI/ML</strong>
+            <ul id="ai-links" class="mt-2 list-unstyled" style="display: none;">
+              <li>&bull; <a href="https://example.com/article3" target="_blank" class="text-dark">Deep Learning for Image Recognition</a></li>
+              <li>&bull; <a href="https://example.com/article4" target="_blank" class="text-dark">Reinforcement Learning in Robotics</a></li>
+            </ul>
+          </div>
+
+          <!-- Financial Mathematics/Quantitative Research Section -->
+          <div class="mb-4">
+            <span class="border border-dark p-2 rounded">&#16883;</span>
+            <strong class="ml-2 toggle-header" data-toggle="finance-math-links">Financial Mathematics</strong>
+            <ul id="finance-math-links" class="mt-2 list-unstyled" style="display: none;">
+              <li>&bull; <a href="https://example.com/article5" target="_blank" class="text-dark">Stochastic Models in Quantitative Finance</a></li>
+              <li>&bull; <a href="https://example.com/article6" target="_blank" class="text-dark">Quantitative Risk Analysis in Markets</a></li>
+            </ul>
+          </div>
+
+          <!-- Finance Section -->
+          <div class="mb-4">
+            <span class="border border-dark p-2 rounded">&#17630;</span>
+            <strong class="ml-2 toggle-header" data-toggle="finance-links">Computer Graphics</strong>
+            <ul id="finance-links" class="mt-2 list-unstyled" style="display: none;">
+              <li>&bull; <a href="https://example.com/article7" target="_blank" class="text-dark">Global Financial Systems and Crisis Management</a></li>
+              <li>&bull; <a href="https://example.com/article8" target="_blank" class="text-dark">Investment Strategies and Market Efficiency</a></li>
+            </ul>
+          </div>
 
         </div>
-
+      </div>
     </div>
-
-
   </div>
-
-
 </div>
+
+<!-- JavaScript to toggle visibility of the research links -->
+<script>
+  document.querySelectorAll('.toggle-header').forEach(header => {
+    header.addEventListener('click', function() {
+      const target = document.getElementById(this.getAttribute('data-toggle'));
+      target.style.display = target.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+</script>
+
 {% endblock %}
