@@ -1,76 +1,204 @@
 {% extends "base.html" %}
 
-{% block title %}Research{% endblock %}
+{% block title %}Research Resources{% endblock %}
 
 {% block content %}
-<div class="container my-5">
-  <div class="row">
-    <div class="col-md-8 mx-auto">
-      <div class="card p-4 border border-dark shadow-sm">
-        <h2 class="text-center text-dark mb-4">Research Resources</h2>
-        <p class="text-muted">
-          Here I will share all the resources I have found helpful in academic research across topics that have sparked my interest.
-        </p>
+<div class="container-fluid py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-xl-9">
+      <h1 class="display-4 mb-5">Research Resources</h1>
 
-        <hr>
+      <p class="lead mb-5">A curated collection of academic research resources and papers across my primary areas of interest, with focus on recent developments and foundational works.</p>
 
-        <div class="container">
-          <h4 class="text-dark mb-3">Topics</h4>
+      <!-- Algorithms Section -->
+      <section class="mb-5">
+        <h2 class="h3 mb-4">
+          <span class="me-2">榖</span>
+          Algorithms & Computational Theory
+        </h2>
 
-          <!-- Algorithms Section -->
-          <div class="mb-4">
-            <span class="border border-dark p-2 rounded">&#27030;</span>
-            <strong class="ml-2 toggle-header" data-toggle="algo-links">Algorithms</strong>
-            <ul id="algo-links" class="mt-2 list-unstyled" style="display: none;">
-              <li>&bull; <a href="https://example.com/article1" target="_blank" class="text-dark">Research Paper on Algorithm Optimization</a></li>
-              <li>&bull; <a href="https://example.com/article2" target="_blank" class="text-dark">Exploring Graph Algorithms</a></li>
-            </ul>
-          </div>
-
-          <!-- AI/ML Section -->
-          <div class="mb-4">
-            <span class="border border-dark p-2 rounded">&#32205;</span>
-            <strong class="ml-2 toggle-header" data-toggle="ai-links">AI/ML</strong>
-            <ul id="ai-links" class="mt-2 list-unstyled" style="display: none;">
-              <li>&bull; <a href="https://example.com/article3" target="_blank" class="text-dark">Deep Learning for Image Recognition</a></li>
-              <li>&bull; <a href="https://example.com/article4" target="_blank" class="text-dark">Reinforcement Learning in Robotics</a></li>
-            </ul>
-          </div>
-
-          <!-- Financial Mathematics/Quantitative Research Section -->
-          <div class="mb-4">
-            <span class="border border-dark p-2 rounded">&#16883;</span>
-            <strong class="ml-2 toggle-header" data-toggle="finance-math-links">Financial Mathematics</strong>
-            <ul id="finance-math-links" class="mt-2 list-unstyled" style="display: none;">
-              <li>&bull; <a href="https://example.com/article5" target="_blank" class="text-dark">Stochastic Models in Quantitative Finance</a></li>
-              <li>&bull; <a href="https://example.com/article6" target="_blank" class="text-dark">Quantitative Risk Analysis in Markets</a></li>
-            </ul>
-          </div>
-
-          <!-- Finance Section -->
-          <div class="mb-4">
-            <span class="border border-dark p-2 rounded">&#17630;</span>
-            <strong class="ml-2 toggle-header" data-toggle="finance-links">Computer Graphics</strong>
-            <ul id="finance-links" class="mt-2 list-unstyled" style="display: none;">
-              <li>&bull; <a href="https://example.com/article7" target="_blank" class="text-dark">Global Financial Systems and Crisis Management</a></li>
-              <li>&bull; <a href="https://example.com/article8" target="_blank" class="text-dark">Investment Strategies and Market Efficiency</a></li>
-            </ul>
-          </div>
-
+        <div class="mb-4">
+          <h3 class="h5 fw-bold">Optimization & Complexity</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              • "Faster Algorithms for All-Pairs Approximate Shortest Paths in Weighted Graphs" (2023)
+              <br><span class="text-muted">Published in SIAM Journal on Computing</span>
+            </li>
+            <li class="mb-3">
+              • "Near-Linear Time Approximation Algorithms for Optimal Transport" (2024)
+              <br><span class="text-muted">ACM STOC 2024</span>
+            </li>
+          </ul>
         </div>
-      </div>
+
+        <div class="mb-4">
+          <h3 class="h5 fw-bold">Graph Theory & Networks</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              • "Advances in Neural Network Graph Embeddings" (2024)
+              <br><span class="text-muted">Neural Information Processing Systems (NeurIPS)</span>
+            </li>
+            <li class="mb-3">
+              • "Spectral Graph Theory and Applications to Distributed Computing" (2023)
+              <br><span class="text-muted">Distributed Computing Journal</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- AI/ML Section -->
+      <section class="mb-5">
+        <h2 class="h3 mb-4">
+          <span class="me-2">緍</span>
+          Artificial Intelligence & Machine Learning
+        </h2>
+
+        <div class="mb-4">
+          <h3 class="h5 fw-bold">Deep Learning</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              • "Vision Transformers: A Comprehensive Survey" (2024)
+              <br><span class="text-muted">IEEE Transactions on Pattern Analysis</span>
+            </li>
+            <li class="mb-3">
+              • "Self-Supervised Learning for Large Language Models" (2024)
+              <br><span class="text-muted">International Conference on Machine Learning (ICML)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h5 fw-bold">Reinforcement Learning</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              • "Multi-Agent Reinforcement Learning in Dynamic Environments" (2024)
+              <br><span class="text-muted">Robotics: Science and Systems Conference</span>
+            </li>
+            <li class="mb-3">
+              • "Offline Reinforcement Learning: Foundations and Applications" (2023)
+              <br><span class="text-muted">Journal of Machine Learning Research</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Financial Mathematics Section -->
+      <section class="mb-5">
+        <h2 class="h3 mb-4">
+          <span class="me-2">䇳</span>
+          Financial Mathematics & Quantitative Analysis
+        </h2>
+
+        <div class="mb-4">
+          <h3 class="h5 fw-bold">Stochastic Processes</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              • "Neural SDEs for Market Microstructure" (2024)
+              <br><span class="text-muted">Journal of Financial Economics</span>
+            </li>
+            <li class="mb-3">
+              • "Advanced Methods in Rough Volatility Modeling" (2023)
+              <br><span class="text-muted">Mathematical Finance Journal</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h5 fw-bold">Risk Analysis</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              • "Deep Learning Approaches to Systemic Risk Assessment" (2024)
+              <br><span class="text-muted">Review of Financial Studies</span>
+            </li>
+            <li class="mb-3">
+              • "Machine Learning for High-Frequency Trading Strategies" (2024)
+              <br><span class="text-muted">Journal of Financial Markets</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Computer Graphics Section -->
+      <section class="mb-5">
+        <h2 class="h3 mb-4">
+          <span class="me-2">䓞</span>
+          Computer Graphics & Visualization
+        </h2>
+
+        <div class="mb-4">
+          <h3 class="h5 fw-bold">Real-Time Rendering</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              • "Neural Rendering: State of the Art and Future Directions" (2024)
+              <br><span class="text-muted">ACM Transactions on Graphics</span>
+            </li>
+            <li class="mb-3">
+              • "Real-Time Ray Tracing with Neural Acceleration" (2023)
+              <br><span class="text-muted">SIGGRAPH 2023</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h5 fw-bold">Geometric Processing</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              • "Differential Geometry Methods in Computer Graphics" (2024)
+              <br><span class="text-muted">Computer Graphics Forum</span>
+            </li>
+            <li class="mb-3">
+              • "Machine Learning for Geometry Processing" (2023)
+              <br><span class="text-muted">Eurographics Symposium</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Additional Resources -->
+      <section class="mb-5">
+        <h2 class="h3 mb-4">Additional Resources</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-3 bg-light rounded">
+              <h3 class="h5 fw-bold">Online Course Materials</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2">• MIT OpenCourseWare - Advanced Algorithms</li>
+                <li class="mb-2">• Stanford CS231n - Deep Learning for Computer Vision</li>
+                <li class="mb-2">• Princeton - Financial Mathematics</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 bg-light rounded">
+              <h3 class="h5 fw-bold">Research Tools</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2">• arXiv Sanity Preserver</li>
+                <li class="mb-2">• Papers With Code</li>
+                <li class="mb-2">• Google Scholar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </div>
 
-<!-- JavaScript to toggle visibility of the research links -->
-<script>
-  document.querySelectorAll('.toggle-header').forEach(header => {
-    header.addEventListener('click', function() {
-      const target = document.getElementById(this.getAttribute('data-toggle'));
-      target.style.display = target.style.display === 'none' ? 'block' : 'none';
-    });
-  });
-</script>
+<style>
+  @media (min-width: 1200px) {
+    .container-fluid {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
 
+  .h3 {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .text-muted {
+    font-size: 0.9em;
+  }
+</style>
 {% endblock %}

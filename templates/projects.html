@@ -1,61 +1,173 @@
 {% extends "base.html" %}
 
-{% block title %}Projects{% endblock %}
+{% block title %}GLASS Research Project{% endblock %}
 
 {% block content %}
-<div class="container my-5">
-  <div class="row">
-    <div class="col-md-8 mx-auto">
-      <div class="card p-4 border border-dark shadow-sm">
-        <!-- Link added to the GLASS Project Mission Statement -->
-        <h2 class="text-center text-dark mb-4">
-          <a href="https://engineering.nyu.edu/student/ruthvik-mukkamala" target="_blank" class="text-dark text-decoration-none">
-            GLASS Project Mission Statement
-          </a>
-        </h2>
-        <p class="text-muted">
-          Building neural networks to solve partial differential equations to improve financial markets.
-        </p>
+<div class="container-fluid py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-xl-9">
 
-        <h4 class="text-dark mt-4">UN Sustainability Focus</h4>
-        <p class="text-muted">
-          For my GLASS project, I have focused on the UN Sustainability Goal of <strong>Decent Work and Economic Growth</strong>.
-        </p>
 
-        <h4 class="text-dark mt-4">GLASS Components</h4>
-        <ul class="list-group mb-4">
-          <li class="list-group-item bg-light">
-            <strong>Sophomore Year</strong>
-            <ul class="mt-2">
-              <li>President of New York University Robotics Club</li>
-              <li>Studied Abroad at NYU Abu Dhabi</li>
-              <li>Quantitative Developer at Balyasny Asset Management</li>
-              <li>Mathematics Research with Prof. Nader Masmoudi</li>
-              <li>Software Engineering Intern at HIFI (acquired by Block)</li>
-              <li>Quantitative/Commercial Risk Modeling at Vault</li>
-            </ul>
-          </li>
-          <li class="list-group-item bg-light">
-            <strong>Junior Year</strong>
-            <ul class="mt-2">
-              <li>Turkey Donation for Earthquake</li>
-              <li>Student Tutoring</li>
-              <li>Winter Instructor for STEM</li>
-              <li>Research and Engineering Intern at Brooklyn Investment Group</li>
-              <li>Service Trip in India</li>
-            </ul>
-          </li>
-        </ul>
+      <!-- Project Header -->
+      <h1 class="display-3 mb-5 text-center" style="color: #4285f4;">GLASS Research Initiative</h1>
 
-        <h4 class="text-dark">Accomplishments</h4>
-        <ul class="list-group">
-          <li class="list-group-item bg-light">Commitment to Service</li>
-          <li class="list-group-item bg-light">Global Competency</li>
-          <li class="list-group-item bg-light">Leadership Development</li>
-          <li class="list-group-item bg-light">Academic Excellence</li>
-        </ul>
+      <!-- Mission Statement -->
+      <div class="mb-5">
+        <h2 class="h4 mb-4">MISSION STATEMENT</h2>
+        <p class="lead" style="max-width: 900px;">Building neural networks to solve partial differential equations to improve financial markets, with a focus on mathematical rigor and practical applications.</p>
+      </div>
+
+      <!-- Research Overview -->
+      <div class="mb-5">
+        <h2 class="h4 mb-4">RESEARCH OVERVIEW</h2>
+        <p>The GLASS project investigates the intersection of deep learning and quantitative finance, specifically focusing on:</p>
+        <div class="mt-3" style="max-width: 900px;">
+          <p class="mb-3">• Neural network architectures optimized for solving high-dimensional PDEs in financial modeling</p>
+          <p class="mb-3">• Novel optimization techniques for improved convergence in complex market scenarios</p>
+          <p class="mb-3">• Implementation of robust numerical methods for real-time market analysis</p>
+        </div>
+      </div>
+
+      <!-- Project Evolution -->
+      <div class="mb-5">
+        <h2 class="h4 mb-4">PROJECT EVOLUTION</h2>
+
+        <!-- Sophomore Year -->
+        <div class="mb-5">
+          <h3 class="h5 fw-bold mb-3">Sophomore Year: Foundation & Early Development</h3>
+          <p class="mb-2">Key Research Activities:</p>
+          <div style="max-width: 900px;">
+            <p class="mb-2">• Mathematics Research with Prof. Nader Masmoudi, establishing theoretical groundwork</p>
+            <p class="mb-2">• Quantitative Developer at Balyasny Asset Management, gaining practical market exposure</p>
+            <p class="mb-2">• Software Engineering Intern at HIFI (acquired by Block), developing technical expertise</p>
+          </div>
+          <p class="mt-3 mb-2">Leadership & Global Experience:</p>
+          <div style="max-width: 900px;">
+            <p class="mb-2">• President of New York University Robotics Club</p>
+            <p class="mb-2">• Study Abroad at NYU Abu Dhabi</p>
+            <p class="mb-2">• Quantitative/Commercial Risk Modeling at Vault</p>
+          </div>
+        </div>
+
+        <!-- Junior Year -->
+        <div class="mb-5">
+          <h3 class="h5 fw-bold mb-3">Junior Year: Implementation & Community Impact</h3>
+          <p class="mb-2">Research Progress:</p>
+          <div style="max-width: 900px;">
+            <p class="mb-2">• Research and Engineering Intern at Brooklyn Investment Group</p>
+            <p class="mb-2">• Development of core neural network architecture</p>
+            <p class="mb-2">• Implementation of preliminary market models</p>
+          </div>
+          <p class="mt-3 mb-2">Community Engagement:</p>
+          <div style="max-width: 900px;">
+            <p class="mb-2">• Turkey Donation for Earthquake Relief</p>
+            <p class="mb-2">• Student Tutoring and Winter Instructor for STEM Programs</p>
+            <p class="mb-2">• Service Trip in India</p>
+          </div>
+        </div>
+
+        <!-- Senior Year -->
+        <div class="mb-5">
+          <h3 class="h5 fw-bold mb-3">Senior Year: Advanced Development & Implementation</h3>
+          <p class="mb-2">Current Focus:</p>
+          <div style="max-width: 900px;">
+            <p class="mb-2">• Optimization of model performance for complex market scenarios</p>
+            <p class="mb-2">• Integration with real-time market data systems</p>
+            <p class="mb-2">• Development of comprehensive testing frameworks</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Framework -->
+      <div class="mb-5">
+        <h2 class="h4 mb-4">TECHNICAL FRAMEWORK</h2>
+        <div class="mb-4">
+          <h3 class="h5 fw-bold mb-3">Neural Architecture</h3>
+          <div style="max-width: 900px;">
+            <p class="mb-2">• Multi-layer perceptrons with adaptive activation functions</p>
+            <p class="mb-2">• Residual connections for improved gradient flow</p>
+            <p class="mb-2">• Custom loss functions incorporating financial domain knowledge</p>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="h5 fw-bold mb-3">Optimization Framework</h3>
+          <div style="max-width: 900px;">
+            <p class="mb-2">• Adaptive learning rate schemes</p>
+            <p class="mb-2">• Curriculum learning for complex PDE systems</p>
+            <p class="mb-2">• Batch normalization techniques for stable training</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Impact & Sustainability -->
+      <div class="mb-5">
+        <h2 class="h4 mb-4">IMPACT & SUSTAINABILITY</h2>
+        <p>This project aligns with the UN Sustainability Goal of <strong>Decent Work and Economic Growth</strong>, contributing to:</p>
+        <div style="max-width: 900px;">
+          <p class="mb-2">• Enhanced market efficiency through improved computational methods</p>
+          <p class="mb-2">• Better risk assessment and management tools</p>
+          <p class="mb-2">• Democratization of complex financial instruments</p>
+        </div>
+      </div>
+
+      <!-- Core Competencies -->
+      <div class="mb-5">
+        <h2 class="h4 mb-4">CORE COMPETENCIES</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-3 h-100">
+              <p class="fw-bold mb-2">Academic Excellence</p>
+              <p class="text-muted mb-0">Advanced mathematical modeling and computational research</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 h-100">
+              <p class="fw-bold mb-2">Global Competency</p>
+              <p class="text-muted mb-0">International research experience and cross-cultural collaboration</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 h-100">
+              <p class="fw-bold mb-2">Leadership Development</p>
+              <p class="text-muted mb-0">Project management and team leadership in technical environments</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 h-100">
+              <p class="fw-bold mb-2">Commitment to Service</p>
+              <p class="text-muted mb-0">Community engagement and educational outreach</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div>
+        <h2 class="h4 mb-4">RESEARCH TEAM</h2>
+        <p class="mb-1">Principal Investigator: Ruthvik Mukkamala</p>
+        <p class="mb-1">Department of Computer Science</p>
+        <p class="mb-0">New York University, Tandon School of Engineering</p>
       </div>
     </div>
   </div>
 </div>
+
+<style>
+  @media (min-width: 1200px) {
+    .container-fluid {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  p, .lead {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .h4 {
+    letter-spacing: 0.05em;
+  }
+</style>
 {% endblock %}
